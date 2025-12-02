@@ -1,0 +1,17 @@
+
+Text-based Diagram:
+
+Python RL (Gym + SB3)
+  |
+  | (Multi-workers: parallel envs)
+  v
+Pipe Stim (op a b) --> ai_bridge (SV) --> Sequencer --> Driver --> DUT (ALU)
+                                           ^
+                                           | (execute_item)
+Monitor <-- Outputs + Coverage
+  |
+  v
+ai_bridge <-- Analysis write --> Pipe Resp (cov bins result flags)
+  ^
+  | (central policy updates)
+Python RL

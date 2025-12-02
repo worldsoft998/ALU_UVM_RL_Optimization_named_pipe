@@ -1,0 +1,17 @@
+dut/alu.sv
+tb/tb_top.sv
+tb/alu_if.sv
+tb/agents/alu_agent/alu_seq_item.sv
+tb/agents/alu_agent/alu_driver.sv
+tb/agents/alu_agent/alu_monitor.sv
+tb/agents/alu_agent/alu_sequencer.sv
+tb/agents/alu_agent/alu_agent.sv
+tb/env/alu_scoreboard.sv
+tb/env/alu_coverage.sv
+tb/env/ai_bridge.sv
+tb/env/alu_env.sv
+tb/sequences/alu_base_seq.sv
+tb/sequences/alu_random_seq.sv
+tb/tests/alu_base_test.sv
+tb/tests/alu_random_test.sv
+tb/alu_pkg.sv

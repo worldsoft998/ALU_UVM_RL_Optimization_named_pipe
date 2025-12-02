@@ -1,0 +1,11 @@
+
+Architecture Overview:
+
+- DUT: 8-bit ALU with 9 operations.
+- UVM TB: Agent (driver, monitor, sequencer), Env (scoreboard, coverage, ai_bridge), Sequences (random), Tests (base, random).
+- RL: Gym env wraps simulator via pipes; PPO trains on coverage maximization.
+- Bridge: Pipe-based 2-way (stimulus in, response/coverage out). No DPI-C.
+- Parallel: SubprocVecEnv for multi-simulator data collection.
+- Comparison: evaluate.py shows steps to 100% coverage for RL vs random.
+
+Changes to UVM: Minimal - added ai_bridge and ai_mode check; rest intact.
